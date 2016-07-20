@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+  div row
+  p Welcome to
+  for result in results
+
+    p.lead  #{result.price}
+    p #{result.title}
+    p #{result.location}
+    h1 #{result.reply}
